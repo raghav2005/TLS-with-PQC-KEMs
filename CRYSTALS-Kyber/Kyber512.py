@@ -20,7 +20,7 @@ def barrett_reduce(a):
     u *= q
     return a - u
 
-zetas = [ # pre-computed (not by us)
+zetas = [ # pre-computed NTT-related constants from Kyber512 spec
     2285,  2184,  467,   1202,  287,   848,   329,   171,   1861,  442, 
     424,   1069,  293,   1851,  1561,  1872,  1285,  1323,  1757,  768, 
     1637,  1188,  804,   1705,  1708,  1235,  1883,  1256,  216,   1402, 

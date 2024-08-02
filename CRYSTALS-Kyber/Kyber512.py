@@ -94,7 +94,7 @@ def sample_poly(n, eta):
 def keygen(q, n, k, eta1):
     s = [sample_poly(n, eta1) for _ in range(k)]
     e = [sample_poly(n, eta1) for _ in range(k)]
-    
+
     a = np.random.randint(0, q, (k, n)) # random matrix
     t = [poly_add(poly_mul(ai, si, q), ei, q) for ai, si, ei in zip(a, s, e)]
     

@@ -86,7 +86,7 @@ def poly_mul(a, b, q):
     return intt(c_ntt)
 
 def sample_gaussian(size, sigma):
-    return np.round(np.random.normal(0, sigma, size)).astype(int) % q
+    return np.random.normal(0, sigma, size).astype(int) % q
 
 def sample_poly(n, eta):
     return sample_gaussian(n, eta)
